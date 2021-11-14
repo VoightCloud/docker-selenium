@@ -15,9 +15,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qqy --no-install-recommends install 
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qqy --no-install-recommends install \
     openjdk-8-jre-headless
-RUN if [ -d "/usr/lib/jvm/java-8-openjdk-armhf" ] \
+RUN if [ -d "/usr/lib/jvm/java-8-openjdk-armhf" ]; \
     then \
-        ln -s /usr/lib/jvm/java-8-openjdk /usr/lib/jvm/java-8-openjdk-armhf \
+        ln -s /usr/lib/jvm/java-8-openjdk /usr/lib/jvm/java-8-openjdk-armhf; \
     fi
 RUN rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
   && sed -i 's/securerandom\.source=file:\/dev\/random/securerandom\.source=file:\/dev\/urandom/' ./usr/lib/jvm/java-8-openjdk/jre/lib/security/java.security
