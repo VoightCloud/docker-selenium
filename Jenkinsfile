@@ -1,6 +1,7 @@
 String imageVersion = "1.0"
-ArrayList<String> imageNames = ["selenium-base", "node-base", "node-chrome", "node-chrome-debug", "node-firefox", "node-firefox-debug", "selenium",
-        "standalone","standalone-chrome", "standalone-chrome-debug", "standalone-firefox", "standalone-firefox-debug"]
+ArrayList<String> imageNames = ["selenium-base", "selenium-node-base", "selenium-node-chrome", "selenium-node-chrome-debug", "selenium-node-firefox",
+        "selenium-node-firefox-debug",
+        "selenium-standalone","selenium-standalone-chrome", "selenium-standalone-chrome-debug", "selenium-standalone-firefox", "selenium-standalone-firefox-debug"]
 String imageRepo = "voight"
 String nexusServer = "nexus.voight.org:9042"
 
