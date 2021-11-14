@@ -1,7 +1,11 @@
 String imageVersion = "1.0"
-ArrayList<String> imageNames = ["selenium-base", "selenium-node-base", "selenium-node-chrome", "selenium-node-chrome-debug", "selenium-node-firefox",
-        "selenium-node-firefox-debug",
-        "selenium-standalone","selenium-standalone-chrome", "selenium-standalone-chrome-debug", "selenium-standalone-firefox", "selenium-standalone-firefox-debug"]
+
+ArrayList<String> imageNames = ["selenium-base", "selenium-node-base",
+        "selenium-node-chrome", "selenium-node-chrome-debug",
+        "selenium-node-firefox", "selenium-node-firefox-debug",
+        "selenium-standalone-chrome", "selenium-standalone-chrome-debug",
+        "selenium-standalone-firefox", "selenium-standalone-firefox-debug"]
+
 String imageRepo = "voight"
 String nexusServer = "nexus.voight.org:9042"
 
@@ -20,7 +24,6 @@ stage ("Build") {
                     buildAMD(imageName, imageVersion, imageRepo, nexusServer, "docker-build-x86_64${UUID.randomUUID().toString()}")
                     createManifest(imageName, imageVersion, imageRepo, nexusServer, "docker-manifest-x86_64${UUID.randomUUID().toString()}")
                 }
-                buildAMD("tensorflow-notebook", imageVersion, imageRepo, nexusServer, "docker-manifest-x86_64${UUID.randomUUID().toString()}")
             }
         }
     }
