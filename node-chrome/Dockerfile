@@ -1,4 +1,4 @@
-FROM deinchristian/rpi-selenium-node-base
+FROM voight/selenium-node-base
 
 USER root
 

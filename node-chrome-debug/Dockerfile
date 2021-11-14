@@ -1,4 +1,4 @@
-FROM deinchristian/rpi-selenium-node-chrome
+FROM voight/selenium-node-chrome
 
 USER root
 

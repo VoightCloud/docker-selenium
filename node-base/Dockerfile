@@ -1,4 +1,4 @@
-FROM deinchristian/rpi-selenium-base
+FROM voight/selenium-base
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true

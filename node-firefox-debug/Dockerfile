@@ -1,4 +1,4 @@
-FROM deinchristian/rpi-selenium-node-firefox
+FROM voight/selenium-node-firefox
 
 USER root
 

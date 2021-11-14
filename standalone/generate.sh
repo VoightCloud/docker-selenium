@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# docker push deinchristian/rpi-selenium-node-chrome
+# docker push voight/selenium-node-chrome
 # Example Commandline:    ./generate.sh StandaloneChrome rpi-selenium-node-chrome Chrome 3.14.0 deinchristian DeinChristian
 
 FOLDER=../$1  # StandaloneChrome

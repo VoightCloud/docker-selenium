@@ -1,4 +1,4 @@
-FROM deinchristian/rpi-selenium-base
+FROM voight/selenium-base
 
 #========================
 # Selenium Configuration
