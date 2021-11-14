@@ -18,7 +18,7 @@ RUN apt-get update
 RUN apt-get -y install chromium-chromedriver \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
-RUN ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+# RUN ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
 
 #========================
 # Selenium Configuration
