@@ -2,7 +2,7 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM voight/selenium-node-firefox-debug:3.14.0
+FROM voight/selenium-node-firefox-debug:latest
 LABEL authors=DeinChristian
 LABEL authors=JeffVoight
 
