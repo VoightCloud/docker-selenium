@@ -49,7 +49,7 @@ def buildArm(imageName, imageVersion, imageRepo, nexusServer, dockerLabel) {
             nodeSelector: 'kubernetes.io/arch=arm64'
     ) {
         node(dockerLabel) {
-            stage('Push') {
+            stage("Push ${imageName}") {
                 def scmVars = checkout([
                         $class           : 'GitSCM',
                         userRemoteConfigs: scm.userRemoteConfigs,
@@ -91,7 +91,7 @@ def buildAMD(imageName, imageVersion, imageRepo, nexusServer, dockerLabel) {
     ) {
         node(dockerLabel) {
 
-            stage('Push') {
+            stage("Push ${imageName}") {
                 def scmVars = checkout([
                         $class           : 'GitSCM',
                         userRemoteConfigs: scm.userRemoteConfigs,
@@ -132,7 +132,7 @@ def createManifest(imageName, imageVersion, imageRepo, nexusServer, dockerLabel)
             nodeSelector: 'kubernetes.io/arch=amd64'
     ) {
         node(dockerLabel) {
-            stage('Manifest') {
+            stage("Manifest ${imageName}") {
                 container('docker') {
                     docker.withRegistry("https://${nexusServer}", 'NexusDockerLogin') {
                         sh "docker pull ${imageRepo}/${imageName}:${imageVersion}-arm64"
