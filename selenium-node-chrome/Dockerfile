@@ -56,5 +56,3 @@ ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 
 USER seluser
 
-EXPOSE 5555
-
