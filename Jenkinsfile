@@ -1,4 +1,4 @@
-String imageVersion = "1.1"
+String imageVersion = "1.2"
 
 ArrayList<String> imageNames = ["selenium-base", "selenium-node-base", "selenium-hub",
         "selenium-node-chrome", // "selenium-node-chrome-debug",
