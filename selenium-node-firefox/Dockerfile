@@ -52,3 +52,6 @@ RUN chmod +x /opt/selenium/generate_config \
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 
 USER seluser
+
+EXPOSE 4444
+
